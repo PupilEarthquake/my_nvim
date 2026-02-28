@@ -20,10 +20,12 @@ local themes = {
              CursorLine = { bg = "None" },
              CursorColumn = { bg = "None" },
              VertSplit = { bg = "None" },
+             LineNr = {fg = "#78808F", bg = "None"},
+             Visual = { bg = "#254054" },
              },
         }
       )
-      vim.cmd("colorscheme ayu")
+      vim.cmd("colorscheme ayu-dark")
     end,
   }
 

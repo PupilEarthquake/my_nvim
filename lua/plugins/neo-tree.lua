@@ -34,10 +34,18 @@ return {
 
         window = {
           position = "left",
-          width = 0.33 -- 固定宽度
+          width = 0.2, -- 固定宽度
+          mappings = {
+          ["h"] = "none",
+          ["j"] = "none",
+          ["k"] = "none",
+          ["l"] = "none",
+          ["i"] = "none",
         },
+        },
+        
 
-        -- 可选：启用 source selector（winbar 或 statusline）
+                -- 可选：启用 source selector（winbar 或 statusline）
         -- source_selector = {
         --  winbar = false,
         --  statusline = false,
