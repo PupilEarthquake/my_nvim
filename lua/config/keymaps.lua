@@ -72,3 +72,20 @@ map(
   opts
 )
 map({'n'}, '<leader>q', '<cmd>close<CR>', opts)
+
+
+
+-- spell check
+map("n", 
+  "<leader>p", 
+  function()
+    vim.opt.spell = not vim.opt.spell:get()
+    if vim.opt.spell:get() then
+      print("spell check: on")
+    else
+      print("spell check: off")
+    end
+  end,
+  opts
+)
+
